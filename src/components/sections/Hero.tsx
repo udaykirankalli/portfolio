@@ -183,7 +183,7 @@ export default function Hero() {
                 </a>
 
                 <a
-                  href="https://drive.google.com/file/d/1FHUHBNo_temHAHZmefUqkt6k7TgW2fK6/view?usp=sharing"
+                  href="https://drive.google.com/uc?export=download&id=1FHUHBNo_temHAHZmefUqkt6k7TgW2fK6"
                   download
                   className="flex items-center gap-2 px-4 py-2 text-sm bg-white text-black rounded-xl hover:bg-gray-200"
                 >
@@ -202,7 +202,7 @@ export default function Hero() {
 
             {/* PDF Preview */}
             <iframe
-              src="https://drive.google.com/file/d/1FHUHBNo_temHAHZmefUqkt6k7TgW2fK6/view?usp=sharing"
+              src="https://drive.google.com/file/d/1FHUHBNo_temHAHZmefUqkt6k7TgW2fK6/preview"
               className="w-full h-full bg-black"
               title="Resume Preview"
             />

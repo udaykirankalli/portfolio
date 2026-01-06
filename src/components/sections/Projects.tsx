@@ -6,7 +6,7 @@ export default function Projects() {
   const projects = [
     {
       title: 'Phonalynx – AI-Powered Resume Analyzer',
-      tech: 'React, Flask, PostgreSQL',
+      tech: 'React, Flask, PostgreSQL, Gemini API, Firebase',
       description: [
         'Built a full-stack web application for resume parsing and analysis.',
         'Integrated NLP-based resume extraction using LLM APIs.',
@@ -15,7 +15,7 @@ export default function Projects() {
     },
     {
       title: 'AI-Based Recipe Generator & Recommender',
-      tech: 'React, Flask, LangChain',
+      tech: 'React, Express, Flask, Hugging Face, MongoDB',
       description: [
         'Built an AI recipe generator using LLaMA-2-7B-Chat (GGUF) via Hugging Face.',
         'Enabled ingredient-based input, calorie calculation, and meal suggestions.',
@@ -24,7 +24,7 @@ export default function Projects() {
     },
     {
       title: 'Supply Chain Risk Prediction System',
-      tech: 'Python, SQL',
+      tech: 'Python, Machine Learning',
       description: [
         'Built a machine learning system to analyze and predict supply chain disruptions.',
         'Performed data preprocessing, feature engineering, and model evaluation.',

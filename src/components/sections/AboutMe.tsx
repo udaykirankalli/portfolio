@@ -24,20 +24,21 @@ export default function AboutMe() {
             </div>
             <div className="text-gray-300 space-y-4 leading-relaxed">
               <p>
-                I'm a passionate Software Engineer specializing in Full Stack Development and AI/ML technologies. 
-                Currently pursuing my B.Tech in Artificial Intelligence and Machine Learning, I combine academic 
-                excellence with real-world experience gained through multiple internships.
-              </p>
-              <p>
-                My journey in tech has been driven by curiosity and a love for problem-solving. I enjoy building 
-                scalable web applications, exploring machine learning algorithms, and working on projects that 
-                make a real impact. From developing AI-powered resume analyzers to creating intelligent recipe 
-                generators, I thrive on turning innovative ideas into functional solutions.
-              </p>
-              <p>
-                When I'm not coding, you'll find me exploring new technologies, contributing to open-source 
-                projects, or solving algorithmic challenges on platforms like LeetCode and HackerRank.
-              </p>
+  I'm a passionate Software Engineer specializing in Full Stack Development and AI/ML technologies. 
+  I completed my B.Tech in Artificial Intelligence and Machine Learning in 2025, combining strong 
+  academic foundations with real-world experience gained through multiple internships.
+</p>
+<p>
+  My journey in tech has been driven by curiosity and a love for problem-solving. I enjoy building 
+  scalable web applications, exploring machine learning algorithms, and working on projects that 
+  make a real impact. From developing AI-powered resume analyzers to creating intelligent recipe 
+  generators, I thrive on turning innovative ideas into functional solutions.
+</p>
+<p>
+  When I'm not coding, you'll find me exploring new technologies, contributing to open-source 
+  projects, or solving algorithmic challenges on platforms like LeetCode and HackerRank.
+</p>
+
             </div>
           </div>
 

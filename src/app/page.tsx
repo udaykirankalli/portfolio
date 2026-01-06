@@ -4,7 +4,6 @@ import Projects from "@/components/sections/Projects";
 import Skills from "@/components/sections/Skills";
 import Experience from "@/components/sections/Experience";
 import GitHubContributions from "@/components/sections/GitHubContributions"
-import Blogs from "@/components/sections/Blogs"
 import Education from "@/components/sections/Education";
 import Contact from "@/components/sections/Contact";
 import Footer from "@/components/sections/Footer";
@@ -25,7 +24,6 @@ export default function App() {
         <Skills />
         <Experience />
         <Projects />
-        <Blogs />
         <GitHubContributions />
         <Education />
         <Contact />

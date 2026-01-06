@@ -21,7 +21,7 @@ export default function Skills() {
     },
     {
       category: 'AI & ML',
-      skills: ['Machine Learning', 'NLP', 'LLMs', 'LangChain', 'Hugging Face', 'Data Science'],
+      skills: ['Machine Learning', 'NLP', 'LLMs', 'Hugging Face'],
       color: 'from-blue-500 to-cyan-500',
     },
     {

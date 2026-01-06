@@ -32,7 +32,7 @@ export default function Education() {
                 B.Tech in Artificial Intelligence and Machine Learning
               </h3>
               <p className="text-blue-400 text-lg">Aditya Engineering College, Andhra Pradesh</p>
-              <p className="text-gray-400 mt-2">2023 - 2025 (Expected) | GPA: 9.07/10</p>
+              <p className="text-gray-400 mt-2">2023 - 2025 | GPA: 8.07/10</p>
             </div>
           </div>
         </div>

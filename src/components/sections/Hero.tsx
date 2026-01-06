@@ -1,10 +1,23 @@
 "use client";
 
-import { Github, Linkedin, Mail, MapPin, ChevronDown, Download } from 'lucide-react';
+import { useState } from "react";
+import {
+  Github,
+  Linkedin,
+  Mail,
+  MapPin,
+  ChevronDown,
+  Download,
+  FileText,
+  ExternalLink,
+  X,
+} from "lucide-react";
 
 export default function Hero() {
+  const [resumeOpen, setResumeOpen] = useState(false);
+
   return (
-    <section className="min-h-screen flex items-center justify-center px-6 py-20">
+    <section className="min-h-screen flex items-center justify-center px-6 py-20 relative">
       <div className="max-w-7xl w-full">
         <div className="grid lg:grid-cols-2 gap-12 items-start">
           {/* Left Side - Main Content */}
@@ -17,9 +30,7 @@ export default function Hero() {
             </div>
 
             <h1 className="text-6xl md:text-8xl font-bold mb-8">
-              <span className="text-white">
-                Uday Kiran
-              </span>
+              <span className="text-white">Uday Kiran</span>
               <br />
               <span className="bg-gradient-to-r from-blue-400 via-cyan-400 to-teal-400 bg-clip-text text-transparent">
                 Kalli
@@ -40,14 +51,15 @@ export default function Hero() {
               >
                 Get In Touch
               </a>
-              <a
-                href="/resume.pdf"
-                download
+
+              {/* 🔥 ONLY THIS BUTTON CHANGED */}
+              <button
+                onClick={() => setResumeOpen(true)}
                 className="flex items-center gap-2 px-8 py-4 bg-white/5 backdrop-blur-md border border-white/10 text-white rounded-2xl font-semibold hover:bg-white/10 transition-all"
               >
-                <Download size={20} />
-                Download Resume
-              </a>
+                <FileText size={20} />
+                View Resume
+              </button>
             </div>
 
             {/* Social Links */}
@@ -92,7 +104,7 @@ export default function Hero() {
             </div>
           </div>
 
-          {/* Right Side - Current Focus Card */}
+         {/* Right Side - Current Focus Card */}
           <div className="lg:sticky lg:top-24">
             <div className="p-8 bg-black/40 backdrop-blur-2xl border border-white/10 rounded-3xl shadow-2xl">
               <h2 className="text-2xl font-bold text-white mb-4">
@@ -109,8 +121,8 @@ export default function Hero() {
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
                     </svg>
                   </div>
-                  <h3 className="text-white font-semibold mb-2 text-sm">Web Development</h3>
-                  <p className="text-gray-400 text-xs">React.js, Node.js, Full Stack</p>
+                  <h3 className="text-white font-semibold mb-2 text-sm">Full Stack Development</h3>
+                  <p className="text-gray-400 text-xs">React.js, Node.js, Next.js</p>
                 </div>
 
                 <div className="group p-6 bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl hover:bg-white/10 hover:border-cyan-500/50 hover:scale-105 transition-all duration-300 cursor-pointer">
@@ -137,11 +149,66 @@ export default function Hero() {
           </div>
         </div>
 
+
         {/* Scroll Indicator */}
         <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
           <ChevronDown size={32} className="text-white/50" />
         </div>
       </div>
+
+      {/* ================= RESUME MODAL (NEW) ================= */}
+      {resumeOpen && (
+        <div className="fixed inset-0 z-50 bg-black/70 backdrop-blur-sm flex items-center justify-center">
+          <div className="w-[90vw] max-w-5xl h-[85vh] bg-zinc-900 rounded-3xl border border-white/10 shadow-2xl overflow-hidden flex flex-col">
+
+            {/* Header */}
+            <div className="flex items-center justify-between px-6 py-4 border-b border-white/10">
+              <div>
+                <h3 className="text-white font-semibold text-lg">
+                  Uday Kiran Kalli — Resume
+                </h3>
+                <p className="text-sm text-gray-400">
+                  View or download my resume
+                </p>
+              </div>
+
+              <div className="flex items-center gap-3">
+                <a
+                  href="https://drive.google.com/file/d/1FHUHBNo_temHAHZmefUqkt6k7TgW2fK6/view?usp=sharing"
+                  target="_blank"
+                  className="flex items-center gap-2 px-4 py-2 text-sm bg-white/5 border border-white/10 rounded-xl hover:bg-white/10"
+                >
+                  <ExternalLink size={16} />
+                  Open
+                </a>
+
+                <a
+                  href="https://drive.google.com/file/d/1FHUHBNo_temHAHZmefUqkt6k7TgW2fK6/view?usp=sharing"
+                  download
+                  className="flex items-center gap-2 px-4 py-2 text-sm bg-white text-black rounded-xl hover:bg-gray-200"
+                >
+                  <Download size={16} />
+                  Download
+                </a>
+
+                <button
+                  onClick={() => setResumeOpen(false)}
+                  className="p-2 rounded-xl hover:bg-white/10"
+                >
+                  <X size={18} />
+                </button>
+              </div>
+            </div>
+
+            {/* PDF Preview */}
+            <iframe
+              src="https://drive.google.com/file/d/1FHUHBNo_temHAHZmefUqkt6k7TgW2fK6/view?usp=sharing"
+              className="w-full h-full bg-black"
+              title="Resume Preview"
+            />
+          </div>
+        </div>
+      )}
     </section>
   );
 }

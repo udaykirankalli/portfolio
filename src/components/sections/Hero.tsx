@@ -22,12 +22,19 @@ export default function Hero() {
         <div className="grid lg:grid-cols-2 gap-12 items-start">
           {/* Left Side - Main Content */}
           <div>
-            <div className="mb-6">
-              <span className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-blue-600 to-cyan-600 text-white text-sm rounded-full">
-                <span className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></span>
-                Software Engineer
-              </span>
-            </div>
+<div className="mb-6">
+  <span className="
+    inline-flex items-center gap-2 px-4 py-2
+    bg-white/10 backdrop-blur-xl
+    border border-white/20
+    text-white text-sm
+    rounded-full
+    shadow-lg shadow-black/30
+  ">
+    <span className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></span>
+    Software Engineer
+  </span>
+</div>
 
             <h1 className="text-6xl md:text-8xl font-bold mb-8">
               <span className="text-white">Uday Kiran</span>

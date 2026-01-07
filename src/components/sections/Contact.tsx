@@ -109,8 +109,9 @@ export default function Contact() {
               </div>
             </div>
 
+
             {/* Social Links */}
-            <div className="p-8 bg-black/40 backdrop-blur-2xl border border-white/10 rounded-3xl shadow-2xl">
+            <div className="p-8 bg-black/30 backdrop-blur-xl border border-white/10 rounded-3xl shadow-2xl">
               <h3 className="text-xl font-semibold text-white mb-4">
                 Connect With Me
               </h3>
@@ -118,22 +119,24 @@ export default function Contact() {
                 <a
                   href="https://github.com/udaykirankalli"
                   target="_blank"
+                  rel="noopener noreferrer"
                   className="p-3 bg-white/10 rounded-2xl hover:bg-white/20 hover:scale-110 transition-all"
                 >
-                  <Github size={24} />
+                  <Github size={24} className="text-white" />
                 </a>
                 <a
                   href="https://linkedin.com/in/udaykirankalli"
                   target="_blank"
+                  rel="noopener noreferrer"
                   className="p-3 bg-white/10 rounded-2xl hover:bg-white/20 hover:scale-110 transition-all"
                 >
-                  <Linkedin size={24} />
+                  <Linkedin size={24} className="text-white" />
                 </a>
                 <a
                   href="mailto:kalliudaykiran@gmail.com"
                   className="p-3 bg-white/10 rounded-2xl hover:bg-white/20 hover:scale-110 transition-all"
                 >
-                  <Mail size={24} />
+                  <Mail size={24} className="text-white" />
                 </a>
               </div>
             </div>

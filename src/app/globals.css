@@ -45,5 +45,55 @@
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
 }
+@theme {
+  /* Add custom animations */
+  --animate-float-slow: float-slow 20s ease-in-out infinite;
+  --animate-float-medium: float-medium 15s ease-in-out infinite;
+  --animate-float-fast: float-fast 10s ease-in-out infinite;
+  --animate-float-slow-reverse: float-slow-reverse 18s ease-in-out infinite;
+}
 
-/* keep the rest EXACTLY as Figma gave */
+@keyframes float-slow {
+  0%, 100% {
+    transform: translate(0, 0) rotate(45deg);
+  }
+  25% {
+    transform: translate(100px, -50px) rotate(90deg);
+  }
+  50% {
+    transform: translate(200px, 0) rotate(135deg);
+  }
+  75% {
+    transform: translate(100px, 50px) rotate(180deg);
+  }
+}
+
+@keyframes float-medium {
+  0%, 100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  33% {
+    transform: translate(-80px, 80px) rotate(120deg);
+  }
+  66% {
+    transform: translate(80px, -80px) rotate(240deg);
+  }
+}
+
+@keyframes float-fast {
+  0%, 100% {
+    transform: translate(0, 0) rotate(12deg) scale(1);
+  }
+  50% {
+    transform: translate(150px, 100px) rotate(192deg) scale(1.2);
+  }
+}
+
+@keyframes float-slow-reverse {
+  0%, 100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  50% {
+    transform: translate(-150px, -100px) rotate(-180deg);
+  }
+}

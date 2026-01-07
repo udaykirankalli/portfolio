@@ -181,22 +181,27 @@ export default function Hero() {
 
               <div className="flex items-center gap-3">
                 <a
-                  href="https://drive.google.com/file/d/1FHUHBNo_temHAHZmefUqkt6k7TgW2fK6/view?usp=sharing"
+                  href="https://drive.google.com/file/d/1jHOmqo6HFjqa0BeJE4boJfT2yMmPvcm5/view?usp=sharing"
                   target="_blank"
                   className="flex items-center gap-2 px-4 py-2 text-sm bg-white/5 border border-white/10 rounded-xl hover:bg-white/10"
                 >
-                  <ExternalLink size={16} />
-                  Open
+                  <ExternalLink size={16} className="text-white" />
+                  <span className="text-white">Open</span>
                 </a>
+                --.
+
+
+
+                
 
                 <a
-                  href="https://drive.google.com/uc?export=download&id=1FHUHBNo_temHAHZmefUqkt6k7TgW2fK6"
-                  download
-                  className="flex items-center gap-2 px-4 py-2 text-sm bg-white text-black rounded-xl hover:bg-gray-200"
-                >
-                  <Download size={16} />
-                  Download
-                </a>
+  href="https://drive.google.com/uc?export=download&id=1jHOmqo6HFjqa0BeJE4boJfT2yMmPvcm5"
+  download
+  className="flex items-center gap-2 px-4 py-2 text-sm bg-white text-black rounded-xl hover:bg-gray-200"
+>
+  <Download size={16} />
+  Download
+</a>
 
                 <button
                   onClick={() => setResumeOpen(false)}
@@ -208,11 +213,11 @@ export default function Hero() {
             </div>
 
             {/* PDF Preview */}
-            <iframe
-              src="https://drive.google.com/file/d/1FHUHBNo_temHAHZmefUqkt6k7TgW2fK6/preview"
-              className="w-full h-full bg-black"
-              title="Resume Preview"
-            />
+<iframe
+  src="https://drive.google.com/file/d/1jHOmqo6HFjqa0BeJE4boJfT2yMmPvcm5/preview"
+  className="w-full h-full bg-black"
+  title="Resume Preview"
+/>
           </div>
         </div>
       )}

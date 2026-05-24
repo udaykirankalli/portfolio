@@ -6,27 +6,27 @@ export default function Skills() {
   const skillCategories = [
     {
       category: 'Frontend',
-      skills: ['React.js', 'HTML5', 'CSS3', 'JavaScript', 'Tailwind CSS', 'Responsive Design'],
+      skills: ['React.js', 'HTML5', 'CSS3', 'JavaScript', 'Tailwind CSS'],
       color: 'from-blue-500 to-cyan-500',
     },
     {
       category: 'Backend',
-      skills: ['Python', 'Flask', 'REST API', 'Node.js', 'Java', 'Microservices'],
+      skills: ['Python', 'REST API', 'Node.js', 'Express.js'],
       color: 'from-cyan-500 to-teal-500',
     },
     {
       category: 'Database',
-      skills: ['PostgreSQL', 'MongoDB', 'SQL', 'Database Design', 'Query Optimization'],
+      skills: ['PostgreSQL', 'MongoDB', 'SQL'],
       color: 'from-teal-500 to-blue-500',
     },
     {
       category: 'AI & ML',
-      skills: ['Machine Learning', 'NLP', 'LLMs', 'Hugging Face'],
+      skills: ['Machine Learning', 'NLP', 'LLMs'],
       color: 'from-blue-500 to-cyan-500',
     },
     {
       category: 'Tools & Others',
-      skills: ['Git', 'GitHub', 'Docker', 'AWS', 'Linux', 'Agile', 'VS Code'],
+      skills: ['Git', 'GitHub', 'Docker', 'AWS', 'Linux', 'Agile'],
       color: 'from-cyan-500 to-blue-500',
     },
   ];

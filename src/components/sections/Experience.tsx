@@ -5,16 +5,18 @@ import { Briefcase, Calendar } from 'lucide-react';
 export default function Experience() {
   const experiences = [
     {
-      title: 'Software Development Intern',
-      company: 'Innowaft Software & Solutions Pvt. Ltd.',
-      period: 'Jan 2025 - May 2025',
-      description: [
-        'Assisted in software development tasks and application workflows.',
-        'Worked on frontend UI improvements and feature enhancements.',
-        'Integrated application components with backend REST APIs.',
-        'Collaborated with team members for code supervision in an agile environment.',
-      ],
-    },
+  title: 'Freelance Full Stack Developer',
+  company: 'Self-Employed',
+  period: 'May 2025 - Present',
+  description: [
+    'Developed scalable full-stack web applications using React.js, Next.js, Node.js, and PostgreSQL.',
+    'Built reusable UI components and responsive interfaces using modern frontend development practices.',
+    'Developed backend APIs and integrated databases for dynamic application functionality.',
+    'Worked on API integrations, debugging, testing, and application performance optimization.',
+    'Collaborated with clients to deliver maintainable and production-ready software solutions.',
+    'Used Git and GitHub for version control and collaborative workflows.',
+  ],
+},
     {
       title: 'Web Developer Intern',
       company: 'BrainOvision Solutions Pvt. Ltd.',

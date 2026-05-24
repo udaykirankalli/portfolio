@@ -139,7 +139,7 @@ export default function Hero() {
                     </svg>
                   </div>
                   <h3 className="text-white font-semibold mb-2 text-sm">AI & Machine Learning</h3>
-                  <p className="text-gray-400 text-xs">NLP, LLMs, Deep Learning</p>
+                  <p className="text-gray-400 text-xs">NLP, LLMs</p>
                 </div>
 
                 <div className="group p-6 bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl hover:bg-white/10 hover:border-teal-500/50 hover:scale-105 transition-all duration-300 cursor-pointer">
@@ -207,7 +207,7 @@ export default function Hero() {
                   onClick={() => setResumeOpen(false)}
                   className="p-2 rounded-xl hover:bg-white/10"
                 >
-                  <X size={18} />
+                  <X size={18} className="text-white" />
                 </button>
               </div>
             </div>

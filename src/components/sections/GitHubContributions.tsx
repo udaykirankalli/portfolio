@@ -17,7 +17,6 @@ export default function GitHubContributions() {
       for (let day = 0; day < days; day++) {
         const rand = Math.random();
 
-        // 🔥 Balanced realistic distribution
         if (rand < 0.25) {
           weekData.push(0);     // 25% none
         } else if (rand < 0.5) {
@@ -113,7 +112,7 @@ export default function GitHubContributions() {
           </div>
 
           <div className="p-6 bg-black/40 backdrop-blur-2xl border border-white/10 rounded-3xl text-center hover:scale-105 transition-all duration-300 shadow-2xl">
-            <div className="text-3xl font-bold text-cyan-400 mb-2">10+</div>
+            <div className="text-3xl font-bold text-cyan-400 mb-2">20+</div>
             <div className="text-gray-400 text-sm">Repositories</div>
           </div>
 

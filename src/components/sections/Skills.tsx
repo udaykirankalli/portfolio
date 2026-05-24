@@ -6,7 +6,7 @@ export default function Skills() {
   const skillCategories = [
     {
       category: 'Frontend',
-      skills: ['React.js', 'HTML5', 'CSS3', 'JavaScript', 'Tailwind CSS'],
+      skills: ['React.js', 'HTML5', 'CSS3', 'JavaScript'],
       color: 'from-blue-500 to-cyan-500',
     },
     {

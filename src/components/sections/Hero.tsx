@@ -181,7 +181,7 @@ export default function Hero() {
 
               <div className="flex items-center gap-3">
                 <a
-                  href="https://drive.google.com/file/d/1jHOmqo6HFjqa0BeJE4boJfT2yMmPvcm5/view?usp=sharing"
+                  href="https://drive.google.com/file/d/1PASofkyE66wBAcaa6B6qsok2li7wqR1x/view?usp=sharing"
                   target="_blank"
                   className="flex items-center gap-2 px-4 py-2 text-sm bg-white/5 border border-white/10 rounded-xl hover:bg-white/10"
                 >
@@ -195,7 +195,7 @@ export default function Hero() {
                 
 
                 <a
-  href="https://drive.google.com/uc?export=download&id=1jHOmqo6HFjqa0BeJE4boJfT2yMmPvcm5"
+  href="https://drive.google.com/file/d/1PASofkyE66wBAcaa6B6qsok2li7wqR1x"
   download
   className="flex items-center gap-2 px-4 py-2 text-sm bg-white text-black rounded-xl hover:bg-gray-200"
 >
@@ -213,8 +213,9 @@ export default function Hero() {
             </div>
 
             {/* PDF Preview */}
+            
 <iframe
-  src="https://drive.google.com/file/d/1jHOmqo6HFjqa0BeJE4boJfT2yMmPvcm5/preview"
+  src="https://drive.google.com/file/d/1PASofkyE66wBAcaa6B6qsok2li7wqR1x/preview"
   className="w-full h-full bg-black"
   title="Resume Preview"
 />
